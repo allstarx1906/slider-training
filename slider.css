@@ -76,27 +76,7 @@ body{
   #radio4:checked ~ .first{
     margin-left: -60%;
   }
-  
-  /*css for automatic navigation*/
-  
-  .navigation-auto{
-    position: absolute;
-    display: flex;
-    width: 800px;
-    justify-content: center;
-    margin-top: 460px;
-  }
-  
-  .navigation-auto div{
-    border: 2px solid #40D3DC;
-    padding: 5px;
-    border-radius: 10px;
-    transition: 1s;
-  }
-  
-  .navigation-auto div:not(:last-child){
-    margin-right: 40px;
-  }
+
   
   #radio1:checked ~ .navigation-manual .manual-btn1{
     background: #40D3DC;
@@ -133,17 +113,17 @@ body{
 
 .carousel__item--visible {
     display: flex;
-    animation: fade 500ms ease-in-out;
+    animation: fade-in 500ms ease-in-out;
 }
 
-/* @keyframes fade{
-     0%{
-         transform: translatex(-100%);
-    } 
-    100%{
-        transform: translatex(0);
-    }
-} */
+@keyframes fade-in{
+  0%{
+      transform: translatex(-100%);
+ } 
+ 100%{
+     transform: translatex(0);
+ }
+}
 
 .carousel__action{
     display: flex;
@@ -151,7 +131,6 @@ body{
     position: absolute;
     top: 50%;
     width: 100%;
-    transform: translateY(-50%);
 }
 
 button{
@@ -177,7 +156,6 @@ button{
 .btn-prev::before{
     top: 50%;
     left: 50%;
-    transform:translateX(-50%) translatey(-50%);
     border: 1.2rem solid;
     border-color: #0000 teal #0000 #0000;
 }
@@ -185,7 +163,6 @@ button{
 .btn-next::before{
     top: 50%;
     right: 50%;
-    transform:translateX(50%) translatey(-50%);
     border: 1.2rem solid;
     border-color: #0000 #0000 #0000 teal;
 }

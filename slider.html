@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="slider.css">
+  <script src="slider.js" defer></script>1
+  <title>Document</title>
+</head>
+<body>
+  <div class="slider">
+    <div class="slides">
+      <input type="radio" name="radio-btn" id="radio1" value="1">
+      <input type="radio" name="radio-btn" id="radio2" value="2">
+      <input type="radio" name="radio-btn" id="radio3" value="3">
+      <input type="radio" name="radio-btn" id="radio4" value="4">
+      <div class="slide first">
+        <img src="assets/img/slider-1.jpg" alt="">
+      </div> 
+      <div class="slide">
+        <img src="assets/img/slider-2.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="assets/img/slider-3.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="assets/img/slider-4.jpg" alt="">
+      </div>
+      <div class="navigation-manual">
+        <label  for="radio1" class="manual-btn manual-btn1"></label>
+        <label  for="radio2" class="manual-btn manual-btn2"></label>
+        <label  for="radio3" class="manual-btn manual-btn3"></label>
+        <label  for="radio4" class="manual-btn manual-btn4"></label>
+      </div>
+    </div>
+  </div>
+  <div class="slider">
+    <div class="carousel">
+      <div class="carousel__item carousel__item--visible">
+        <img src="assets/img/slider-1.jpg" alt="" />
+      </div>
+      <div class="carousel__item">
+        <img src="assets/img/slider-2.jpg" alt="" />
+      </div>
+      <div class="carousel__item">
+        <img src="assets/img/slider-3.jpg" alt="" />
+      </div>
+      <div class="carousel__item">
+        <img src="assets/img/slider-4.jpg" alt="" />
+      </div>    
+      <div class="carousel__action">
+        <button class="btn-prev" id="carousel__btn--prev" ></button>
+        <button class="btn-next" id="carousel__btn--next" ></button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
